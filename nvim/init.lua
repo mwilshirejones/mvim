@@ -1,4 +1,11 @@
 require('plugins')
+require('plugins/nvim-treesitter')
+require('plugins/neovim-ayu')
+require('plugins/lualine')
+require('plugins/indentLine')
+require('plugins/nvim-tree')
+require('plugins/nvim-cmp')
+require('plugins/lspconfig')
 
-local set = vim.opt
-set.number = true
+require('options')
+require('keymaps')
