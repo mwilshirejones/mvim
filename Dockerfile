@@ -1,7 +1,7 @@
 FROM alpine:edge
 
 RUN apk update \
-    && apk add git gcc g++ zlib font-hack-nerd neovim=0.8.1-r0 nodejs npm
+    && apk add git gcc g++ zlib font-hack-nerd ripgrep neovim=0.8.1-r0 nodejs npm
 
 # Install language servers
 RUN npm install -g \
